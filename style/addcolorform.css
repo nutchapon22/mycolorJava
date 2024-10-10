@@ -1,0 +1,55 @@
+/* พื้นหลังของหน้าจอ */
+.root {
+    -fx-background-color: #f0f4f8;
+}
+
+/* กล่องฟอร์ม */
+.form-box {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 2, 2);
+}
+
+/* สไตล์ Title */
+.title-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+/* สไตล์ช่อง Input */
+.input-field {
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    -fx-border-color: #dddddd;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-color: #ffffff;
+}
+
+/* สไตล์ปุ่ม Save */
+.save-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 8px 16px;
+}
+
+/* สไตล์ปุ่ม Cancel */
+.cancel-button {
+    -fx-background-color: #ff4d4d;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 8px 16px;
+}
+
+/* สไตล์ Color Picker */
+.color-picker {
+    -fx-pref-width: 150px;
+}

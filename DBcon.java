@@ -62,11 +62,20 @@ public class DBcon {
         return rs;
     }
 
-    public void addcolorUser(String wheelId, String colorname, int userId) {
+    public void addcolor(String wheelId, String colorname, int userId) {
         try {
             String query = "INSERT INTO colorlist (wheelId, colorname, userId) VALUES ('" + wheelId + "', '"
                     + colorname + "', '"
                     + userId + "')";
+            stmt.executeUpdate(query);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void deletecolor(int colorid) {
+        try {
+            String query = "DELETE FROM colorlist WHERE colorid = '" + colorid + "'";
             stmt.executeUpdate(query);
         } catch (SQLException e) {
             e.printStackTrace();
