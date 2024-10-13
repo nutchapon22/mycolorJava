@@ -73,7 +73,8 @@ public class ColorCard extends Application {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            db.CloseDb();
+            // db.CloseDb();
+            System.out.println("Close DB");
         }
 
         // ห่อ GridPane ด้วย ScrollPane

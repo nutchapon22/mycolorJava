@@ -76,6 +76,7 @@ public class DBcon {
     public void deletecolor(int colorid) {
         try {
             String query = "DELETE FROM colorlist WHERE colorid = '" + colorid + "'";
+            System.out.println("Delete Query: " + query);
             stmt.executeUpdate(query);
         } catch (SQLException e) {
             e.printStackTrace();
